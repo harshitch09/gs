@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="demo1111.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        
+        <script>
+             window.onload = function()
+            {
+                initial();
+                calculate();
+                calculate2();
+                calculate3();
+                calculate4();
+                calculate5();
+                calculate6();
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="show()">cllick</button>
+        <button onclick="show2()">cllick again</button>
+        <button onclick="show3()">cliick once more</button>
+        <button onclick="show4()">last click</button>
+        <button onclick="show5()">phase2 start</button>
+        <button onclick="show6()">click</button>
+        <button onclick="show7()">click again</button>
+        <img id="image1" style="display: none;"  src="world maps.png" alt="World Map" width="1000" height="571">
+        <canvas id="myCanvas" style="display: none; z-index: 1;" width="1000" height="571"></canvas>
+
+        <span class="txt txt1">There are <span class="high">7.7 billion</span> <br> people on this <br> planet.</span>
+        <span class="txt txt2">Every year <span class="high">we</span> emit <br> 33,621,530,000,000 kg <br> carbon dioxide.</span>
+        <span class="txt txt3"><span class="high">39%</span> of which comes from <br> buildings</span>
+        <span class="txt txt4">and 50% of them are <span class="high">residences.</span></span>
+        <span class="txt txt5">But what if...</span>
+        <span class="txt txt6">...we replace<br><span class="high">traditional materials..</span></span>
+        <span class="txt txt7">...with <span class="high"> green materials!</span></span>
+
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+        <span class="dot class1"></span>
+        <span class="dot class2 class3"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+        <span class="dot class1"></span>
+    </body>
+    <script src="demo111.js"></script>
+</html>
